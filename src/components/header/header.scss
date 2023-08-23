@@ -1,0 +1,65 @@
+.header-headingContainer {
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+  background: #222222;
+  width: 100%;
+  border-bottom: 1px solid #35444b;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .header-subcontainer {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .header-logoContainer {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      text-decoration: none;
+
+      .header-cloudIcon {
+        color: white;
+        font-size: 1.5em;
+      }
+
+      .header-logoHeading {
+        color: white;
+        margin-left: 10px;
+        font-size: 1.5em;
+      }
+    }
+
+    .header-navContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+
+      .header-welcomeContainer {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+
+        .header-welcome-big {
+          color: white;
+          font-size: 16px;
+        }
+
+        .header-welcome-small {
+          color: white;
+          font-size: 15px;
+        }
+      }
+
+      .header-logoIcon {
+        color: white;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

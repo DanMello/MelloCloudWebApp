@@ -1,0 +1,36 @@
+.react-video-main-container {
+  background: #1e262a;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #35444b;
+
+  .react-video-player-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .react-video-sub-container-mobile {
+    padding: 10px;
+
+    .react-video-heading {
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .react-video-version {
+      color: #fff;
+      font-size: 19px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .react-video-link-container {
+      color: rgba(260, 260, 260, 0.7);
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,35 +1,27 @@
-import React, { Component } from 'react'
-import { hot } from 'react-hot-loader'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import React, { Component } from "react";
+import { hot } from "react-hot-loader";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 class ContentWrapper extends Component {
-
   render() {
-
-    let isMobile = this.props.config.isMobile
-
     return (
-      <div>
-        
-        <Header isMobile={isMobile} config={this.props.config}/>
+      <div className="main-wrapper">
+        <Header />
 
-        <div className={!isMobile ? 'routeWrapper' : 'routeWrapper-mobile'} style={this.props.background ? {background: this.props.background} : null}> 
-
-          <div
-            className={!isMobile ? 'main-content-wrapper' : null}
-            style={this.props.desktopwidth ? {width: '100%', maxWidth: 'initial', borderBottom: '1px solid #ccc' } : null}
-          >
-            {this.props.children}
-          </div>
-          
+        <div
+          className={"routeWrapper"}
+          style={
+            this.props.background ? { background: this.props.background } : null
+          }
+        >
+          <div className={"main-content-wrapper"}>{this.props.children}</div>
         </div>
 
-        <Footer isMobile={isMobile} />
-
+        <Footer />
       </div>
-    )
+    );
   }
 }
 
-export default hot(module)(ContentWrapper)
+export default hot(module)(ContentWrapper);

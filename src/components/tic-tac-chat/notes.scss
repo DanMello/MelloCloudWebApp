@@ -1,27 +1,25 @@
-.tic-tac-notes-mainContainer * {
-  color: #444;
-}
-
 .tic-tac-notes-mainContainer {
-  background: white;
   margin: 10px 5px 10px 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.tic-tac-notes-heading {
-  /* font-size: 2px; */
+  padding: 20px;
+  background: #1e262a;
+  border: 1px solid #35444b;
+  .tic-tac-notes-heading {
+    /* font-size: 2px; */
+    color: #fff;
+  }
 }
 
 .tic-tac-notes-subHeading {
   font-size: 16px;
   margin-top: 20px;
+  color: #fff;
 }
 
 .tic-tac-notes-heading-2 {
   font-size: 16px;
   margin-top: 20px;
   font-weight: bold;
+  color: #fff;
 }
 
 .tic-tac-notes-date {
@@ -34,10 +32,11 @@
   margin-top: 10px;
   margin-left: 25px;
   font-size: 16px;
+  color: rgba(260, 260, 260, 0.7);
+  font-weight: 300;
+  line-height: 24px;
 }
 
 .tic-tac-notes-li {
   padding: 5px;
 }
-
-
