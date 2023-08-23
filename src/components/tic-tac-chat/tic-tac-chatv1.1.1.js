@@ -7,7 +7,6 @@ import ContentWrapper from "../contentwrapper/ContentWrapper";
 import "./tictac.css";
 
 export default function TicTacChatv111({ config }) {
-  console.log(config);
   return (
     <ContentWrapper>
       <div className={"tic-tac-mainContainer"}>

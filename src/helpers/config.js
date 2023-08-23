@@ -13,9 +13,9 @@ export function checkHostName(hostname) {
   else if (/127./.test(hostname))
     config = {
       url: "http://" + hostname + ":3001",
-      device: "mobile",
+      device: "desktop",
       environment: "development",
-      isMobile: true,
+      isMobile: false,
     };
   else if (hostname === "mellocloud.com" || hostname === "www.mellocloud.com")
     config = {
@@ -27,9 +27,9 @@ export function checkHostName(hostname) {
   else if (hostname === "m.mellocloud.com")
     config = {
       url: "https://api.mellocloud.com",
-      device: "mobile",
+      device: "desktop",
       environment: "production",
-      isMobile: true,
+      isMobile: false,
     };
 
   return config;
